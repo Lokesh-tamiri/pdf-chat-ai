@@ -11,8 +11,8 @@ import pineconeClient from "./pinecone";
 import { PineconeStore } from "@langchain/pinecone";
 import { PineconeConflictError } from "@pinecone-database/pinecone/dist/errors";
 import { Index, RecordMetadata } from "@pinecone-database/pinecone";
-import { adminDb } from "../firebaseAdmin";
 import { auth } from "@clerk/nextjs/server";
+import { adminDb } from "./firebaseAdmin";
 
 // Initialize the OpenAI model with API key and model name
 const model = new ChatOpenAI({
